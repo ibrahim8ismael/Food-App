@@ -1,0 +1,298 @@
+/* 
+body-color = #FFF4B7
+green-buttons = #006A67
+green-buttons:hover = #019f9a
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    overflow-x: hidden;
+    background: #FFF4B7;
+}
+.Home-Page{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+/* Nav styles */
+.nav-container{
+    width: 85%;
+    height: 12vh;
+    /* background-color: #333; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-container  a{
+    color: #006A67;
+    text-decoration: none;
+    font-weight: 650;
+    cursor: pointer;
+}
+.nav-container .logo a{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    /* text-shadow: 1px 1px 1px black; */
+}
+.nav-container .selectors{
+    width: 35%;
+}
+.nav-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container ul li a:hover{
+    color: #019f9a;
+    transition: 0.2s;
+    text-decoration: underline;
+}
+button{
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-btns{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-btn{
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF4B7;
+    background-color: #006A67;
+    left: 20px;
+    box-shadow: 3px 3px 1px black;
+    border-radius: 5px;
+}
+.sign-btn{
+    width: 9rem;
+    height: 2.6rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF4B7;
+    background-color: #006A67;
+    position: relative;
+    left: 20px;
+    box-shadow: 3px 3px 1px black;
+    border-radius: 5px;
+}
+.sign-btn:hover , .cart-btn:hover{
+    background-color: #019f9a;
+}
+/* End Nav styles */
+
+/* content styles */
+.main-head{
+    margin-top: 180px;
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-head h1{
+    margin-left: 90px;
+    text-align: left;
+    font-size: 38px;
+    font-weight: bolder;
+    color: #006A67;
+}
+.main-head p{
+    margin-top: 20px;
+    margin-left: 90px;
+    text-align: left;
+    font-size: 18px;
+    color: #006A67;
+}
+.main-head button{
+    margin-top: 50px;
+    width: 9rem;
+    height: 2.6rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF4B7;
+    background-color: #006A67;
+    position: relative;
+    left: 20px;
+    box-shadow: 3px 3px 1px black;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+.main-head button:hover{
+    background-color: #019f9a;
+}
+.arrow {
+    display: inline-block; 
+    transition: transform 0.3s;
+}
+.main-head button:hover .arrow {
+    transform: translateX(6px);
+}
+.main-head img{
+    width: 90%;
+}
+/* End main head */
+
+/* Explor Foods */
+.explor-txt{
+    margin-top: 150px;
+    color: #006A67;
+}
+.explor-section{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.explor-section img{
+    width: 80%;
+    border-radius: 10px;
+}
+.explor-section h2{
+    font-size: 24px;
+    color: #006A67;
+}
+/* End Explor section */
+.search-container {
+    margin-bottom: 20px; /* Space between search input and main heading */
+    text-align: center; /* Center the search input */
+}
+/* search input */
+.search-container{
+    margin-top: 100px;
+}
+.search-container img{
+    width: 50%;
+}
+.search-input {
+    width: 35rem; 
+    height: 2.6rem;
+    font-size: 16px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 1px black; */
+    transition: 0.3s;
+}
+.search-btn{
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF4B7;
+    background-color: #006A67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 3px 3px 1px black;
+    position: relative;
+    left: 5px;
+}
+.search-btn:hover{
+    background-color: #019f9a;
+}
+.search-input:focus {
+    outline: none; 
+    box-shadow: 0 0 10px #019f9a;
+}
+/* footer section */
+
+.footer {
+    background-color: #006A67; /* Footer background color */
+    color: #FFF4B7; /* Text color */
+    padding: 40px 0; /* Padding for the footer */
+    text-align: center; /* Center the text */
+    margin-top: 120px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto; /* Center the content */
+}
+
+.footer-links {
+    display: flex; /* Use flexbox for links */
+    gap: 20px; /* Space between links */
+}
+
+.footer-links a {
+    color: #FFF4B7; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #019f9a; /* Change color on hover */
+}
+
+.social-media {
+    display: flex; /* Use flexbox for social icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+    color: #FFF4B7; /* Social icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #019f9a; /* Change color on hover */
+}
+
+.newsletter {
+    margin-top: 40px; /* Space above the newsletter section */
+    text-align: center; /* Center the newsletter form */
+}
+
+.email-input {
+    width: 250px; /* Adjust width as needed */
+    height: 2.6rem; /* Match button height */
+    padding: 0 10px; /* Add some padding */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px black;
+    margin-right: 10px; /* Space between input and button */
+}
+
+.subscribe-btn {
+    height: 2.6rem; /* Match input height */
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF4B7;
+    background-color: #006A67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subscribe-btn:hover {
+    background-color: #019f9a; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above copyright text */
+}
