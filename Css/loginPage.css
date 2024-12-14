@@ -71,7 +71,7 @@ input:focus{
     outline: 2px solid var(--btn-hover);
 }
 button{
-    width: 10rem;
+    width: 95%;
     height: 2.5rem;
     padding: 0.2rem;
     border-radius: 5px;
@@ -81,10 +81,17 @@ button{
     box-shadow: 5px 5px 1px black;
     border: none;
     transition: 0.3s;
-    margin: auto;
 }
 button:hover{
     outline: 2px solid var(--btn-hover);
     background-color: var(--bg-color);
     color: var(--btn-hover);
+}
+.login-btn .arrow {
+    margin: 0 0 0 2px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.login-btn:hover .arrow {
+    transform: translateX(7px);
 }
