@@ -215,6 +215,25 @@ button {
     border-radius: 5px;
     box-shadow: 3px 3px 1px black;
 }
-.restorants-info{
-    text-align: left;
+.restorant-info h2{
+    position: relative;
+    top: 10px;
+}
+.res-btn{
+    width: 95%;
+    padding: 10px;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    box-shadow: 3px 3px 1px black;
+}
+.res-btn:hover {
+    background-color: var(--btn-hover);
 }
