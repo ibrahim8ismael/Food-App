@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     --bg-color: #FFF4B7;
     --btn-color: #006A67;
@@ -16,31 +15,30 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-    margin: 0;
     overflow-x: hidden;
+    background: var(--bg-color);
 }
-
-.container {
+.restorants-page{
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    height: 100vh;
+    text-align: center;
 }
 
 .nav-container {
-    width: 100%;
+    width: 85%;
     height: 12vh;
-    margin-bottom: 50px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-container a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 650;
+    cursor: pointer;
 }
 
 .nav-container .logo a {
@@ -104,69 +102,6 @@ button {
 
 .sign-btn:hover,
 .cart-btn:hover {
-    background-color: var(--btn-hover);
-}
-
-.view-btn .arrow {
-    margin: 0 0 0 2px;
-    display: inline-block;
-    transition: transform 0.3s;
-}
-.view-btn:hover .arrow {
-    transform: translateX(7px);
-}
-
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.category {
-    height: 30rem;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 2px;
-    box-shadow: 3px 3px 1px black;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-}
-
-.category img {
-    width: 95%;
-    height: 22rem;
-    border-radius: 8px;
-    box-shadow: 3px 3px 1px black;
-}
-
-.category p{
-    font-weight: bold;
-    position: relative;
-    top: 10px;
-    right: 120px;
-}
-
-.view-btn {
-    width: 95%;
-    padding: 10px;
-    background-color: var(--btn-color);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    position: relative;
-    top: 20px;
-    box-shadow: 3px 3px 1px black;
-}
-
-.view-btn:hover {
     background-color: var(--btn-hover);
 }
 
@@ -250,4 +185,73 @@ button {
 
 .footer-bottom {
     margin-top: 20px;
+}
+
+.content{
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.content img{
+    width: 70%;
+    position: relative;
+    left: 100px;
+    box-shadow: 5px 5px 1px black;
+    border-radius: 5px;
+}
+.submit-order{
+    position: relative;
+    right: 100px;
+}
+.submit-order input{
+    width: 90%;
+    height: 1.7rem;
+    padding: 0.2rem;
+    padding-left: 10px;
+    color: var(--text-color);
+    outline: 3px solid var(--btn-color);
+    box-shadow: 5px 5px 1px black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: capitalize;
+}
+form{
+    margin-top: 15px;
+}
+form .start-day , form .people-num{
+    width: 38.5%;
+    margin: 0 25px 20px 0;
+}
+
+
+
+
+button{
+    width: 95%;
+    height: 2.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--btn-hover);
+    box-shadow: 5px 5px 1px black;
+    border: none;
+    transition: 0.3s;
+}
+button:hover{
+    outline: 2px solid var(--btn-hover);
+    background-color: var(--bg-color);
+    color: var(--btn-hover);
+}
+.arrow {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.order-btn:hover .arrow {
+    transform: translateX(6px);
 }
